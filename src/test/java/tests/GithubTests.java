@@ -20,7 +20,7 @@ public class GithubTests {
         open("https://github.com/selenide/selenide");
 
         $("[href='/selenide/selenide/wiki'").click();
-        $("[data-filterable-for=wiki-pages-filter]").$(byLinkText("SoftAssertions")).click();
+        $("#wiki-pages-box").$(byLinkText("SoftAssertions")).click();
         $("#wiki-body").shouldHave(text("Using JUnit5"), text("@ExtendWith"));
     }
 
