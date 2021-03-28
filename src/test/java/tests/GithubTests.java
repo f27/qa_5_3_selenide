@@ -16,7 +16,7 @@ public class GithubTests {
     }
 
     @Test
-    void findSelenideInGtihub() {
+    void findSoftAssertionsInWikiTest() {
         open("https://github.com/selenide/selenide");
 
         $("[href='/selenide/selenide/wiki'").click();
